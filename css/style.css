@@ -1,0 +1,4 @@
+.bg-gradient-custom {
+    background: linear-gradient(to bottom, #1a237e, #000000);
+    min-height: 100vh;
+}
