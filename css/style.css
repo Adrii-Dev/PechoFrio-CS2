@@ -1,4 +1,73 @@
+/* Color del fondo */
 .bg-gradient-custom {
     background: linear-gradient(to bottom, #1a237e, #000000);
     min-height: 100vh;
 }
+/* Color de los botones personalizados */
+.btn.btn-custom {
+    background-color: #FF993F;
+    color: white;
+}
+.btn.btn-custom:hover {
+    background-color: #A04B00;
+    color: white;
+}
+/* Color de los enlaces personalizados */
+.custom-link {
+    color: #ff9800 !important;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #ffc107 !important;
+}
+/* Sombra personalizada*/
+.shadow-custom {
+    box-shadow: 0 4px 8px #FF993F;
+}
+/* Titulo personalizado*/
+#equipo-titulo h1 {
+    font-size: 4rem;
+    color: #ff9800;
+    text-shadow: 2px 2px 4px #A04B00;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.titulo-separador {
+    width: 50%;
+    margin: 1rem auto;
+    border: 1px solid #ff9800;
+    opacity: 0.7;
+}
+
+#equipo-titulo h4.subtitulo {
+    color: #A04B00;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #ffc107;
+}
+@media (max-width: 768px) {
+    #equipo-titulo h1 {
+        font-size: 2.5rem;
+    }
+    #equipo-titulo h4.subtitulo{
+        font-size: 1rem;
+    }
+}
+/* Fondo personalizado tarjetas */
+.bg-image-custom {
+    background-image: url('../images/cs2-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 4rem 0;
+}
+/* Tarjetas personalizadas */
+.card {
+    background-color: rgba(33, 37, 41, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+

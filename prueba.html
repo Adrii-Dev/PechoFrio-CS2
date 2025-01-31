@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/cs2-icon.png">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <div class="navbar navbar-expand-lg" style="background-color: #09F;">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">NavBar</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Los enlaces -->
+            <div class="collapse navbar-collapse" id="collapseNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Prohibido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="#" class="dropdown-item">Opcion 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Formulario, en este caso para uno de busqueda-->
+                <form class="d-flex"><!-- Lo ponemos para que sea flex y se alineen -->
+                    <input type="text" class="form-control" type="search" placeholder="Buscar..">
+                    <button class="btn btn-outline-success">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario -->
+    <section id="buscar">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <input type="text" class="form-control" placeholder="Buscar..">
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select class="form-select">
+                                    <option value="" selected>Consolas</option>
+                                    <option value="" selected>PS5</option>
+                                    <option value="" selected>XBOX</option>
+                                    <option value="" selected>Switch</option>
+                                    <option value="" selected>PC</option>                                  
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select class="form-select">
+                                    <option value="" selected>Tiendas</option>
+                                    <option value="" selected>PS5</option>
+                                    <option value="" selected>XBOX</option>
+                                    <option value="" selected>Switch</option>
+                                    <option value="" selected>PC</option>                                  
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <h3>Estrategia</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <h3>Lucha</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3>Cooperativo</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-grid-1x2-fill"></i>
+                            </div>
+                            <h3>Plataforma</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-emoji-dizzy-fill"></i>
+                            </div>
+                            <h3>Horror</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-car-front-fill"></i>
+                            </div>
+                            <h3>Carreras</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-incognito"></i>
+                            </div>
+                            <h3>Misterio</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-motherboard-fill"></i>
+                            </div>
+                            <h3>Educacional</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <!-- Icono -->
+                                <i class="bi bi-water"></i>
+                            </div>
+                            <h3>Acuaticos</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section class="container">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa incidunt est nam optio eaque at sed, dicta fugiat repudiandae libero quidem debitis magnam eligendi hic soluta iusto non commodi.</p>
+        
+        <a href="#">Ver</a>
+        <p>20-11-2019</p>
+
+        <hr>
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa incidunt est nam optio eaque at sed, dicta fugiat repudiandae libero quidem debitis magnam eligendi hic soluta iusto non commodi.</p>
+        
+        <a href="#">Ver</a>
+        <p>23-09-2021</p>
+
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-primary btn-lg">Post Anteriores</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi-youtube"></i></a>
+                    </li>
+                </ul>
+                <div>
+                    CopyRigth Mi Web &copy; 2021
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

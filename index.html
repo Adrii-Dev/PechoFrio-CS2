@@ -1,17 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PechoFrio CS2</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./images/cs2-icon.png">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gradient-custom">
 
+<body class="bg-gradient-custom">
+    <!-- NavBar -->
+    <nav class="navbar bg-dark navbar-expand-lg py-3 mb-4 border-bottom shadow-custom" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/cs2-brand.png" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-center">
+                <span class="fs-4">PechoFrio CS2</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBody">
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarBody">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-custom dropdown-toggle" href="./prueba.html" role="button"
+                            data-bs-toggle="dropdown">
+                            Equipito
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#jugadores">Jugadores</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Roles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#">Vertigo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#">???</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Titulo -->
+    <section class="container" id="equipo-titulo">
+        <h1>PechoFrio CS2</h1>
+        <hr class="titulo-separador">
+        <h4 class="subtitulo">El equipo formado por maulas</h4>
+    </section>
+    <!-- Jugadores -->
+    <section class="bg-image-custom m-5 rounded shadow-custom" id="jugadores">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Tarjeta 1 -->
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/naruto.jfif" style="width: 180px">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">Hitcontrak</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- Adri Ibañez -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2" style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                En la jodida aldea de la jodida hoja jodiendo a toda la peñita que dice que no voy ha ser un jodido hokage
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom" href="https://steamcommunity.com/id/HeisenRekt/">
+                                            Steam
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
