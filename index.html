@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="bg-gradient-custom">
@@ -29,23 +29,24 @@
             <div class="collapse navbar-collapse" id="navbarBody">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link btn btn-custom dropdown-toggle" href="./prueba.html" role="button"
+                        <a class="nav-link btn btn-custom dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">
                             Equipito
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#jugadores">Jugadores</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Roles</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaAdri">Adri</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaSergio">Sergio</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaDavid">David</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaAristoteles">Aristoteles</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaGenis">Genis</a></li>
+                            <li><a class="dropdown-item" href="#tarjetaRubio">Rubio</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-link" href="#">Vertigo</a>
+                        <a class="nav-link custom-link" href="./vertigo.html">Vertigo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-link" href="#">???</a>
+                        <a class="nav-link custom-link" href="./roles.html">Roles</a>
                     </li>
                 </ul>
             </div>
@@ -60,10 +61,10 @@
     <!-- Jugadores -->
     <section class="bg-image-custom m-5 rounded shadow-custom" id="jugadores">
         <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="row d-flex justify-content-between align-items-center h-100">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <!-- Tarjeta 1 -->
-                    <div class="card">
+                    <div class="card" id="tarjetaAdri">
                         <div class="card-body p-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
@@ -72,16 +73,24 @@
                                 <div class="flex-grow-1 ms-3">
                                     <h5 class="mb-1" style="color: #FF993F;">Hitcontrak</h5>
                                     <p class="mb-2 opacity-50" style="color: #FF993F;">- Adri Ibañez -</pclass>
-                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2" style="background-color: #1a237e;">
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
                                         <div>
                                             <p class="small mb-1 " style="color: #FF993F;">
-                                                En la jodida aldea de la jodida hoja jodiendo a toda la peñita que dice que no voy ha ser un jodido hokage
+                                                Adri el "monedita" Ibañez, tira una moneda al principio de cada partida
+                                                y según el resultado le sale un game bueno o no le da ni a un hipopotamo
+                                                en un pasillo.
+                                                Forzado a ser smoker por su bajada de nivel desde el CS:GO y por que los
+                                                demas de su equipo no se saben ni un lineup decente.
+                                                Tuvo que aprender a controlar la rabia, cada dos por tres le salía
+                                                espuma por la boca.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="d-flex mt-2">
-                                        <a role="button" class="flex-grow-1 btn btn-custom" href="https://steamcommunity.com/id/HeisenRekt/">
-                                            Steam
+                                        <a role="button" class="flex-grow-1 btn btn-custom"
+                                            href="https://steamcommunity.com/id/HeisenRekt/">
+                                            Steam <i class="bi bi-steam"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -89,40 +98,199 @@
                         </div>
                     </div>
                     <!-- Tarjeta 2 -->
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card" id="tarjetaSergio">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/cs2-sergio.png" style="width: 180px">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">xThundy</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- Sergio Perez -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                Sergio "<i>{ ... } { ... } { ... } { ... }</i> Ostia que estaba muteado"
+                                                Perez, el smoker del equipo pero no por que se sepa lineups, si no por
+                                                lo que fuma.
+                                                Por culpa de tener que pagar una hipoteca ya no puede echarle unas
+                                                tiraditas a keydrop.
+                                                El smoke en conector de Mirage es un 50/50.
+                                                Antiguo AWP pero forzado a ser rifler por tener que jugar solo por las
+                                                tardes con el pajero de Valentín.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom"
+                                            href="https://steamcommunity.com/profiles/76561198146620518">
+                                            Steam <i class="bi bi-steam"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
+                    <!-- Tarjeta 3 -->
+                    <div class="card" id="tarjetaDavid">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <video autoplay loop muted style="width: 180px; height: 180px;">
+                                    <source src="./images/subway.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">Mag0</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- David Puche -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                David "el que no se entera de nada" Puche, efectivamente se entera de
+                                                muy poco.
+                                                El unico smoke que se sabe es el de CT en Mirage, pero según él se
+                                                conoce un montón que nunca tira.
+                                                No cotiza ni aunque le paguen. El AWP del equipo cuando, nuevamente, el
+                                                pajas de Valentín no lo quiere utilizar.
+                                                Su mapa favorito es Vertigo y la tiene super adentro.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom"
+                                            href="https://steamcommunity.com/id/Davidpm97">
+                                            Steam <i class="bi bi-steam"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!-- Tarjeta 4 -->
+                    <div class="card" id="tarjetaAristoteles">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/cs2-valentin.jpg" style="width: 180px; height: 180px;">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">drazik</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- Valentín de Estagira -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                Valentín "el pajas" de Estagira, el que utiliza la escusa de tener
+                                                doble-eco para comprarse una puta Desert Eagle.
+                                                Se motiva que flipa en las compes cuando sale gente que es un bot.
+                                                Leetify player.
+                                                Rompió el record mundial de compañeros flasheados en un año. Solo juega
+                                                a First Person Shooter y a detonarse a todo el mundo en el Baldur's Gate
+                                                3.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom me-1"
+                                            href="https://steamcommunity.com/id/drazikj">
+                                            Steam <i class="bi bi-steam"></i>
+                                        </a>
+                                        <!-- Boton Abrir Modal -->
+                                        <button class="flex-grow-1 btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Flash! <i class="bi bi-brightness-high-fill"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Tarjeta 5 -->
+                    <div class="card" id="tarjetaGenis">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/cs2-genis.jpg" style="width: 180px; height: 180px;">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">bunyols</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- Genís Vega -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                Genís "collarín" Vega, catalán y pelirrojo, jodeme más. Desde que tiene novia está desaparecido.
+                                                Es un autista jugando. No sabe para que sirve comprarse la utilidad. Nadie sabe como le pagan en el "trabajo" que tiene.
+                                                DJ por darle al play a una playlist de Spotify. Defendiendo el site hace <i>chás</i> y desaparece de tu lado.
+                                                Se supone que ha estado en equipos semi-pros de CS:GO, no se lo cree ni él.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom"
+                                            href="https://steamcommunity.com/id/thisisgenisvega">
+                                            Steam <i class="bi bi-steam"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 6 -->
+                    <div class="card" id="tarjetaRubio">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/cs2-rubio.jfif" style="width: 180px;">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1" style="color: #FF993F;">rubS</h5>
+                                    <p class="mb-2 opacity-50" style="color: #FF993F;">- Jorgue Rubiales -</pclass>
+                                    <div class="d-flex justify-content-center rounded-3 p-2 mb-2"
+                                        style="background-color: #1a237e;">
+                                        <div>
+                                            <p class="small mb-1 " style="color: #FF993F;">
+                                                Jorgue "el rubio" Rubiales, duró una semana en CS2 pero le echó a la rule un par de veces.
+                                                Otro pajero renegado que ha competido en equipos de verdad, no como bunyols.
+                                                Vinchenso le llamó calvo en un stream, locura de clip. Tiene a los chavales del Uber Eats esclavizados.
+                                                Descubrir el LOL le cambió la vida, ahora se queda de empalme los findes para rankear.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a role="button" class="flex-grow-1 btn btn-custom"
+                                            href="https://steamcommunity.com/id/im_rubS">
+                                            Steam <i class="bi bi-steam"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin de las tarjetas -->
                 </div>
             </div>
         </div>
     </section>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Hacia el top</a></p>
+        <p style="color: #FF993F;">&copy; 2023–2025 Derechos reservados a un menda, Adrii. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">POV: Valentín te flashea a la espalda.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/cs2-flash.jfif" class="img-fluid mb-3" alt="Te flashea Valentín a la espalda">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>

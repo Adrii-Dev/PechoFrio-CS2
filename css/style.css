@@ -70,4 +70,34 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
+.fondo-card {
+    background-color: rgba(33, 37, 41, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+/* Color Accordion */
+.accordion-button {
+    background-color: #A04B00 !important;
+    color: white !important;
+}
 
+.accordion-button:not(.collapsed) {
+    background-color: #FF993F !important;
+    color: white !important;
+}
+
+/* Accordion body */
+.accordion-body {
+    background-color: #2A2A2A;
+    color: #FF993F;
+}
+
+/* Accordion item borders */
+.accordion-item {
+    border: 1px solid #FF993F;
+}
+
+/* Remove default focus outline */
+.accordion-button:focus {
+    box-shadow: none;
+}

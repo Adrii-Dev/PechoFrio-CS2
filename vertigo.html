@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertigo</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/cs2-icon.png">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .carousel-inner{
+            height: 0;
+            padding-bottom: 50%;
+        }
+        .carousel-item{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .carousel-item img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-custom">
+    <!-- Header: Navbar -->
+    <header>
+        <nav class="navbar bg-dark navbar-expand-lg py-3 border-bottom shadow-custom" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/cs2-brand.png" alt="Logo" width="40" height="40"
+                        class="d-inline-block align-text-center">
+                    <span class="fs-4">PechoFrio CS2</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBody">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarBody">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn btn-custom dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Equipito
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./index.html#tarjetaAdri">Adri</a></li>
+                                <li><a class="dropdown-item" href="./index.html#tarjetaSergio">Sergio</a></li>
+                                <li><a class="dropdown-item" href="./index.html#tarjetaDavid">David</a></li>
+                                <li><a class="dropdown-item" href="./index.html#tarjetaAristoteles">Aristoteles</a></li>
+                                <li><a class="dropdown-item" href="./index.html#tarjetaGenis">Genis</a></li>
+                                <li><a class="dropdown-item" href="./index.html#tarjetaRubio">Rubio</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./vertigo.html">Vertigo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./roles.html">Roles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/vertigo-1.jpg" class="d-block w-100">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Vertigo, el mejor mapa de la pool.</h1>
+                            <p class="opacity-75">Aunque a la peña le joda que flipas, Vertigo era el mapa más divertido de la pool.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/vertigo-2.webp" class="d-block w-100">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Un reework de puta madre.</h1>
+                            <p>Le hicieron un rework y quedó de locos, la peña la tiene super adentro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/vertigo-3.webp" class="d-block w-100">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Dos alturas, doble diversión.</h1>
+                            <p>El mapa más original de todos, te lo pasabas de locos jugando.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="b-example-divider"></div>
+        <!-- Body -->
+        <div class="container marketing mt-4">
+            <!-- Imagenes redondas -->
+            <div class="row ms-5">
+                <div class="col-lg-4">
+                    <img src="./images/vertigo-1.jpg" class="rounded-circle shadow-custom" width="140" height="140">
+                    <h2 class="fw-normal " style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Bueno</h2>
+                    <p style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">La creame de la creame. Los pros no lo jugaban en competitivo por miedo al éxito.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/vertigo-2.jpg" class="rounded-circle shadow-custom" width="140" height="140">
+                    <h2 class="fw-normal" style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Bonito</h2>
+                    <p style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">De los mapas más iluminados de la pool. Tienes buena visibilidad en todos los picks que hagas.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/vertigo-3.webp" class="rounded-circle shadow-custom" width="140" height="140">
+                    <h2 class="fw-normal" style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Barato</h2>
+                    <p style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Con todo lo que te divertias jugando y lo estabas jugando gratis, una locura de oferta y demanda.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="color: #FF993F; box-shadow: 0 4px 8px #A04B00;">
+            <!-- 1er Explicación -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1" style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Dos niveles. <span
+                            class="text-body-secondary" style="color: #FF993F;">Doble diversión.</span></h2>
+                    <p class="lead" style="color: #FF993F;">Vertigo está basado en un rascacielos en construcción y centra el conflicto entre los equipos de CT y Terroristas. 
+                        El objetivo principal de los Terroristas es plantar la bomba, mientras que los CT deben evitar que logren su objetivo. 
+                        Ambos sitios de bomba y el punto de aparición de los CT se encuentran en el piso superior del mapa, mientras que el punto de 
+                        aparición de los Terroristas está ubicado en el piso inferior, en la escalera.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./images/vertigo-lvl.webp" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="color: #FF993F; box-shadow: 0 4px 8px #A04B00;">
+            <!-- 2da Explicación -->
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1" style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Bomba de A. <span
+                            class="text-body-secondary" style="color: #FF993F;">Mejor desde el rework.</span></h2>
+                    <p class="lead" style="color: #FF993F;">El Bombsite A tiene una ruta principal desde el punto de aparición de los Terroristas conocida como "Ramp" (Rampa). 
+                        Esta se divide en otra ruta, comúnmente llamada "Construction" (Construcción) y luego "Short" (Corto). 
+                        La otra ruta hacia A es a través del medio, que se conecta al bombsite por el "Lobby/Elevator" (Vestíbulo/Ascensor). 
+                        Esto también sirve como una forma de retomar el bombsite A, junto con la habitación trasera. 
+                        Los CT pueden defender el bombsite en varios lugares, como las bolsas de cemento en la parte superior de la rampa, desde A short entre las diversas cajas en el bombsite, etc.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="./images/vertigo-1.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="color: #FF993F; box-shadow: 0 4px 8px #A04B00;">
+            <!-- 3ra Explicación -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1" style="color: #FF993F; text-shadow: 2px 2px 4px #A04B00;">Bomba de B. <span
+                            class="text-body-secondary">Ideal para anchors.</span></h2>
+                    <p class="lead" style="color: #FF993F;">El Bombsite B tiene una ruta principal desde el punto de aparición de los Terroristas conocida como "Stairs" (Escaleras). 
+                        La lucha vertical para tomar el control de B Stairs puede resultar bastante desafiante, por lo que la otra opción para llegar a este bombsite es a través del conector del medio. 
+                        Los CT pueden retomar el bombsite a través de su punto de aparición (CT spawn) y el conector del medio, aunque ambos convergen en el mismo punto de estrangulamiento. 
+                        Pueden defender el bombsite desde el pilar, la esquina y el generador.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./images/vertigo-3.webp" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="color: #FF993F; box-shadow: 0 4px 8px #A04B00;">
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Hacia el top</a></p>
+            <p style="color: #FF993F;">&copy; 2023–2025 Derechos reservados a un menda, Adrii. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
